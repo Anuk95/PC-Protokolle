@@ -238,8 +238,6 @@ Nach Übertragung der Punkte werden die Millitmeterpapiere von dem Holzrahmen ge
 \section{Messwerte}
 
 
-Abstand Laser- Holzrahmen: 70 cm
-
 
 \begin{table} [h]
 \centering
@@ -250,8 +248,6 @@ Abstand Laser- Holzrahmen: 70 cm
         \hline
           Abstand  & Gitter 1  & Gitter 2 \\
           in mm & d=50,1$\mu$m & d unbekannt\\
-         
-         
          \hline 
          $y_3 $& 28 & 16 \\
          \hline
@@ -268,13 +264,23 @@ Abstand Laser- Holzrahmen: 70 cm
 \end{tabular}
 \end{table}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
+
+Abstand Laser- Holzrahmen: $z_0$ = 70 cm
+
 
 
 \section{Auswertung}
+
+Zwischem dem Gitter und  
+
+\begin{figure} [h]
+\begin{center}
+\includegraphics[scale=0.4]{Dreieck.png} \end{center}
+\caption{Beugungswinkel $\beta_n$ im Verhältnis zu $z_0$ und $y_n$}
+\end{figure}
+
+
+
 
 Ja aber am Schluss ist es explodiert!
 
@@ -282,11 +288,28 @@ Ja aber am Schluss ist es explodiert!
 \subsection{Fehlerfortpflanzung}
 Im Versuch entstehen Fehler, sowohl durch die Messungen mit dem Zollstock als auch bei der Übertragung und Ausmessen der Werte auf dem Millimeterpapier. Messungenauigkeiten beim Messen mit dem Zollstock entstehen dadurch, dass es schwierig ist, den Zollstock exakt so anzulegen, dass die kürzeste Strecke zwischen Holzrahmen und Laser gemessen wird, auch ist die Skalierung nur auf einen Millimeter genau gegeben. Wir gehen daher von folgendem Fehler aus: $\Delta_{Zollstock}={2} \cdot{10^{-2}}m$. Die Messungenauigkeiten bezüglich des Millimeterpapiers entstehen durch ungenaue Übertragung, etwa sind die Laserpunkte eher in Tropfenform, sodass der Mittelpunkt nicht exakt bestimmt werden kann, des weiteren ist die Messung der Abstände nur auf Millimeter genau. $\Delta_{Millimeterpapier}={2} \cdot {10^{-3}}$
 
-<<<<<<< HEAD
+\par
 
-
-=======
->>>>>>> origin/master
+\centering
+\begin{table} [h]
+\begin{tabular}{|p{2 cm}||p{3 cm}|p{3 cm}|p{3 cm}|}
+		\hline
+         n & $\sin\beta_n$  & $\sin\beta_max $ & $sin\beta_min$ \\
+         \hline 
+         $1 $& 0,013& 0,01357 & 0,01215 \\
+         \hline
+         $2 $& 0,028&  0,03241 &0,0218 \\
+         \hline
+         $3 $& 0,04& 0,04054& 0,0394\\
+         \hline
+         $-1$& 0,013&  0,01357& 0,0122 \\
+         \hline
+         $-2$& 0,026& 0,02641 & 0,02499 \\
+         \hline             
+         $-3$& 0,04& 0,04054  & 0,0394 \\
+         \hline
+\end{tabular}
+\end{table}
     
 
 \subsection{Diskussion systematischer Fehler}
