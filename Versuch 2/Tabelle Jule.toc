@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {3}Messwerte}{6}{section.3}
 \contentsline {section}{\numberline {4}Auswertung}{6}{section.4}
 \contentsline {section}{\numberline {5}Fehlerrechnung}{6}{section.5}
-\contentsline {section}{\numberline {6}Fehlerdiskussion}{6}{section.6}
-\contentsline {subsection}{\numberline {6.1}Diskussion systematischer Fehler}{6}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Vergleich mit Literaturwerten}{6}{subsection.6.2}
-\contentsline {section}{\numberline {7}Literaturverzeichnis}{6}{section.7}
+\contentsline {subsection}{\numberline {5.1}Fehlerfortpflanzung}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Diskussion systematischer Fehler}{6}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Vergleich mit Literaturwerten}{6}{subsection.5.3}
+\contentsline {section}{\numberline {6}Literaturverzeichnis}{6}{section.6}
