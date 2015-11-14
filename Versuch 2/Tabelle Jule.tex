@@ -135,13 +135,15 @@ Gegeben sind zwei Siebgitter, eines davon mit bekannter und eines mit unbekannte
 %\begin{flushleft}
 Licht ist elektromagnetische Strahlung, die aus einzelnen Transversalwellen besteht. Diese harmonischen Wellen bewegen sich mit der Lichtgeschwindigkeit $c= 299 792,458 \frac{km}{s}$ durch den Raum. Sie können durch folgende Sinusfunktion in Abhängigkeit des Ortes $x$ und der Zeit $t$ beschrieben werden:
 \\
-\par %= Leerzeile
-$f(x,t)= {A}\cdot{\sin(kx-wt)}$
+\par %= Leerzeile\begin{equation}
+\begin{equation}
+f(x,t)= {A}\cdot{\sin(kx-wt)}
+\end{equation}
 \\
 \par
 
-Die Wellenzahl $k$ mit $k=\frac{2\pi}{\lambda}$ beschreibt hierbei den Zusammenhang zwischen der Wellenlänge und der Frequenz. \\
-Die Relation zu der Periodendauer $T$ gibt die Kreisfrequenz $\omega =\frac{2\pi}{T} $ an.  
+Die Wellenzahl $k$ mit \begin{equation}k=\frac{2\pi}{\lambda}\end{equation} beschreibt hierbei den Zusammenhang zwischen der Wellenlänge und der Frequenz. \\
+Die Relation zu der Periodendauer $T$ gibt die Kreisfrequenz \begin{equation}\omega =\frac{2\pi}{T} \end{equation} an.  
 
 %können mit folgender Sinusfunktion in Abhängigkeit zum Ort x beschrieben werden, wobei $\lambda$ die Wellenlänge beschreibt:
 %\\
@@ -161,7 +163,9 @@ Die Relation zu der Periodendauer $T$ gibt die Kreisfrequenz $\omega =\frac{2\pi
 \subsection{Phasengeschwindigkeit und Gangunterschied}
 Die Ausbreitungsgeschwindigkeit $c$, mit der sich eine Phase einer Welle (der augenblickeliche Zustand, z.B. ein Minimum) im Raum fortbewegt, wird als Phasengeschwindigkeit $v$ in Abhängigkeit zu der Frequenz $v=\frac{1}{T}$ und der Wellenlänge $\lambda$ beschrieben:\\
 \par
-$\vec{v}_p = {v}\cdot{\lambda}$
+\begin{equation}
+\vec{v}_p = {v}\cdot{\lambda}
+\end{equation}
 \\
 \par
 
@@ -180,24 +184,28 @@ Werden zwei Wellen mit gleicher Phasengeschwindigkeit zeitlich verzögert ausges
 Überlagern sich zwei oder mehr Wellen, so führt dies zu einer Amplitudenänderung. Die Wellen verschmelzen zu einer neuen Welle mit größerer oder kleinerer Amplitude, je nachdem, ob gleiche oder unterschiedliche Phasen aufeinandertreffen. Diese Erscheinung nennt man Interferenz. Treffen Maxima oder Minima aufeinander, so wird die Amplitude verstärkt (konstruktive Interferenz); trifft Maximum auf Minium so löschen sich die Wellen gegenseitig aus (destruktive Interferenz). 
 Eine konstruktive Interferenz zweier Wellen ist demnach nur möglich, wenn der Gangunterschied ebendieser ganzzahliges Vielfaches der Wellenlänge ist:\\
 \par
-$\delta={n}\cdot{\lambda}$ mit $n = 0,1,2...$
+\begin{equation}\delta={n}\cdot{\lambda} \quad \mathrm{mit} \quad n = 0,1,2...\end{equation}
 \\
 \par
 
 Ist $\delta$ jedoch ein ungradzahliges Vielfaches der halben Wellenlänge, so tritt destruktive Interferenz auf. \\
 \par
-$\delta = \frac{{(2n+1)}\cdot{\lambda}}{2}$ mit $n=0,1,2...$
+\begin{equation}\delta = \frac{{(2n+1)}\cdot{\lambda}}{2}\quad \mathrm{mit} \quad n=0,1,2...\end{equation}
 \\
 \par
 
 
 \subsection{Streuung und Beugung}
 Trifft eine Welle auf ein Hindernis, so verändert sie ihren geometrisch vorgeschriebenen Weg, dh. sie wird gestreut. %Der Begriff Streuung ist ein Sammelbegriff für viele physikalische Phänomene wie Reflexion, Brechung, Beugung etc., bei denen die Welle außerdem ihre Phase und Wellenlänge $\lambda$ verändern kann. 
-Trifft ein Wellenzug senkrecht auf ein Gitter mit der Gitterkonstante $d$, so werden seine verschiedenen Wellen an benachbarten Gitterstäben unter dem Beugungswinkel $\beta_n$ gebeugt. Konstruktive Interferenz ergibt sich nur, wenn der Gangunterschied dieser Wellen Formel NR. [NUMMERIERUNG angeben!!!] entspricht, dh. ein ganzzahliges Vielfaches beträgt.
+Trifft ein Wellenzug senkrecht auf ein Gitter mit der Gitterkonstante $d$, so werden seine verschiedenen Wellen an benachbarten Gitterstäben unter dem Beugungswinkel $\beta_n$ gebeugt. Konstruktive Interferenz ergibt sich nur, wenn (5) zutrifft, dh. der Gangunterschied einem ganzzahligen Vielfachen von $\lambda$ entspricht.\\
+\par
+Bei Abbildung des entstehenden Musters auf einen Schirm wird ein Beugunsbild der aus konstruktiver Interferenz entstehenden Wellen sichtbar.
 
-[Grafik aus Skript zum Gangunterschied einfügen]
-
-Bildet man das entstehende Muster auf einem Schirm ab, so entsteht ein Beugungsbild der Wellen mit je ganzzahligem Gangunterschied. [.........]
+\begin{figure} [h]
+\begin{center}
+\includegraphics[scale=0.75]{Gangunterschied.png} \end{center}
+\caption{Am Gitter entstehender Gangunterschied $\delta$}
+\end{figure}
 
 \section{Experimentelles}
 
@@ -211,12 +219,12 @@ Bildet man das entstehende Muster auf einem Schirm ab, so entsteht ein Beugungsb
 \end{figure}
 
 Zunächst wird der Versuch wie auf der Skizze beschrieben aufgebaut.
-Ein Laser strahlt auf ein Siebgitter, wodurch auf einem sich dahinter befindenden, an ein Holzrahmen befestigtes, Milimeterpapier ein Interferenzmuster entsteht. Anschließend wird das Siebgitter durch ein anderes Siebgitter, nun unbekannter Gitterkonstante, ersetzt.
+Ein Laser strahlt auf ein Siebgitter, wodurch auf einem sich dahinter befindenden, an einem Holzrahmen befestigten, Milimeterpapier ein Interferenzmuster entsteht. Anschließend wird das Siebgitter durch ein anderes Siebgitter mit unbekannter Gitterkonstante ersetzt.
 
 
 \subsection{Durchführung}
-Die entstehenden Beugungsmuster werden auf das Papier übertragen. Dabei werden jeweils die drei Punkte  oberhalb und unterhalb des nullten Beugunsmaximum übertragen.
-Nach übertragung der Punke werden die Militmeterpapiere von dem Holrahmen genommen und die Abstände $y_{y},y_{2},y_{3}$ der Punkte oberhalb des nullten Maximum zu diesem und die Abstände $y_{-1},y_{-2},y_{-3}$ unterhalb des nullten Maximum zu diesem gemessen. Außerdem wird der Abstand $z_{o}$ vom Laser zum Holzrahmen gemmessen.
+Die entstehenden Beugungsmuster werden auf dem Papier festgehalten. Dabei werden jeweils die drei Punkte  oberhalb und unterhalb des nullten Beugunsmaximums übertragen.
+Nach Übertragung der Punke werden die Militmeterpapiere von dem Holrahmen genommen und die Abstände $y_{y},y_{2},y_{3}$ der Punkte oberhalb des nullten Maximums zu diesem und die Abstände $y_{-1},y_{-2},y_{-3}$ unterhalb des nullten Maximums zu diesem gemessen. Außerdem wird der Abstand $z_{o}$ vom Laser zum Holzrahmen gemmessen.
 
 
 \section{Messwerte}
