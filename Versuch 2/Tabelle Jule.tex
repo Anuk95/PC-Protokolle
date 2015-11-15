@@ -109,8 +109,10 @@ Assistentin: & Annemarie Kehl\\
 
 \begin{Large}
 \fbox{
-  \begin{minipage}[t][3.5cm][t]{6cm} 
-   Werte:
+  \begin{minipage}[t][2cm][t]{6cm} 
+   Werte:\\
+   $\Delta \lambda = 676 \pm 52 \mathrm {nm} $\\
+   $ d \quad = 72 \pm 3 \mathrm{\mu m} $\\
   \end{minipage}
 }
 \end{Large}
@@ -289,11 +291,19 @@ Ja aber am Schluss ist es explodiert!
 \subsection{Fehlerfortpflanzung}
 Im Versuch entstehen Fehler, sowohl durch die Messungen mit dem Zollstock als auch bei der Übertragung und Ausmessen der Werte auf dem Millimeterpapier. Messungenauigkeiten beim Messen mit dem Zollstock entstehen dadurch, dass es schwierig ist, den Zollstock exakt so anzulegen, dass die kürzeste Strecke zwischen Holzrahmen und Laser gemessen wird, auch ist die Skalierung nur auf einen Millimeter genau gegeben. Wir gehen daher von folgendem Fehler aus: $\Delta_{Zollstock}={2} \cdot{10^{-2}}m$. Die Messungenauigkeiten bezüglich des Millimeterpapiers entstehen durch ungenaue Übertragung, etwa sind die Laserpunkte eher in Tropfenform, sodass der Mittelpunkt nicht exakt bestimmt werden kann, des weiteren ist die Messung der Abstände nur auf Millimeter genau. $\Delta_{Millimeterpapier}={2} \cdot {10^{-3}}$ \\
 
-Diese Fehler setzten sich nun in den weiteren Berechnungen fort. Zunächst 
+Diese Fehler setzten sich nun in den weiteren Berechnungen fort. Zunächst lassen sich mithilfe der Gaußschen Fehlerfortpflanzung maximale und minimale Werte mithilfe folgender Formel für die erste Berechnung des Winkels $\beta$ errechnen:\\
+
+\begin{equation}
+\Delta \beta = \sin( \quad \sqrt{({\dfrac{1}{y_{|n|}^{2}+z_{0}^{2}}} \cdot {{2} \cdot {10^{-3}}})^{2} + (- {\dfrac{1}{y_{|n|}^{2}+z_{0}^{2}}} \cdot {{2} \cdot {10^{-2}}})^{2}} \quad)
+\end{equation}\\\\\
+
+Es ergeben sich die folgenden Werte: \\\\\\\\\\\\
+   
 \par
 
-\centering
+
 \begin{table} [h]
+\centering
 \begin{tabular}{|p{2 cm}||p{3 cm}|p{3 cm}|p{3 cm}|}
 		\hline
          n & $\sin\beta_n$  & $\sin\beta_max $ & $sin\beta_min$ \\
@@ -312,16 +322,74 @@ Diese Fehler setzten sich nun in den weiteren Berechnungen fort. Zunächst
          \hline
 \end{tabular}
 \end{table}
->>>>>>> origin/master
-    
+
+\begin{flushleft}
+Diese Werte lassen sich nun in der Auftragung von $ \beta_{|n|} $ gegen $ \frac{|n|}{d} $ als Fehlerbalken einzeichnen. Durch einzeichnen einer Ausgleichsgeraden ergibt sich eine minimale und maximale Steigung von $ \lambda $.\\
+
+$ \lambda_{max} = 693 \mathrm {nm} $\\
+$ \lambda_{min} = 589 \mathrm {nm} $\\
+
+
+Daraus lässt sich nun der Absolute Fehler mithilfe folgender Formel berechnen:\\
+
+$ \Delta \lambda = \dfrac{ \lambda_{max}-\lambda_{min}}{2}= \pm 52 \mathrm {nm} $\\
+
+Der Fehler von $ \Delta \lambda $ lässt sich nun in Form von Fehlerbalken in die zweite Auftragung zur Bestimmung von \emph{d} eintragen. Es ergeben sich folgende Werte für die Fehlerbalken:
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{6 cm}|p{6 cm}|}
+		\hline
+         Obere Grenze des Fehlerbalkens: & Untere Grenze des Fehlerbalkens: \\
+         
+         $ {|n|} \cdot {\lambda_{max}} $ & $ {|n|} \cdot {\lambda_{min}} $ \\
+         \hline
+         ${0,69} \cdot {10^{-6}} $& ${0,59} \cdot {10^{-6}} $ \\
+         \hline
+         ${1,4} \cdot {10^{-6}} $& ${1,2} \cdot {10^{-6}} $\\
+         \hline
+         ${2,1} \cdot {10^{-6}} $&${1,8} \cdot {10^{-6}} $ \\
+         \hline
+\end{tabular}
+\end{table}
+ 
+In diese Auftragung lässt sich wieder eine Ausgleichsgerade maximaler und minimaler Steigung zeichnen und so ein maximaler und minimaler Wert für \emph{d} ermitteln:
+$ d_{max} = 76 \mathrm{\mu m} $\\
+$ d_{min} = 70 \mathrm{\mu m} $\\
+Der Absolute Fehler wird nun wie folgt berechnet:
+$ \Delta d = \dfrac{ d_{max}-d_{min}}{2}= \pm 3 \mathrm {\mu m} $\\
+\end{flushleft}
 
 \subsection{Diskussion systematischer Fehler}
+Im Versuch können zunächst systematische Fehler beim Abmessen der Längen auftreten. Etwa könnte der Zollstock oder das Geodreieck fehlerhaft sein und immer zu kleine oder zu große Längen messen. Des weiteren ist auch der Laser fehlerhaft, in dem Sinne, dass nicht nur Licht einer bestimmten Wellenlänge ausgesandt wird sondern die Wellenlänge ein wenig variiert. Dadurch kommt es beim Beugungsmuster zu tropfenförmigen anstelle von runden Lichtpunkten. Hier muss darauf geachtet werden, einheitlich an einer Stelle des jeweiligen Tropfens zu messen.
 
-
-
+  
 \subsection{Vergleich mit Literaturwerten}
 
+Für die Wellenlänge erhalten wir aus der Auftragung folgendes Ergebnis:\\
+\begin{center}
+$\Delta \lambda = 676 \pm 52 \mathrm {nm} $\\
+Herstellerangabe $ \Delta \lambda = 630-680 \mathrm {nm} $\\
+\end{center}
+
+Die gemessene Wellenlänge liegt im Bereich der Herstellerangaben. Die Fehlergrenzen weichen ein wenig von den Fehlergrenzen der Herstellerangabe ab.\\\\
+
+Für die Gitterkonstante erhalten wir, ebenfalls aus der Auftragung, folgenden Wert:\\\\
+\centering
+$ d = 72 \pm 3 \mathrm{\mu m} $\\
+
+\begin{flushleft}
+Für die Gitterkonstante liegen keine Herstellerangaben vor. Jedoch ist die Gitterkonstante des ersten Gitters mit $d = 50,1 \mathrm{\mu m} $ vom Hersteller gegeben. Bei dem Vergleich der Beugungsmuster ist aufällig, dass die Punkte bei dem zweiten Gitter enger aneinander liegen, was bedeutet, dass es sich um ein Gitter mit einer größeren Gitterkonstante handeln muss. Da sich dies im Vergleich unseres Wertes, auch mit den Fehlergrenzen, mit dem Herstellerwert bestätigen lässt, stimmt unser Wert mindestens in dieser Beziehung.
+\vspace{1cm}
+Indem man Fehler minimiert lassen sich noch genauere Ergebnisse, die auch mit den Herstellerangaben besser übereinstimmen. So könnte man etwa anstelle des doch eher ungenauen Zollstock und Geodreiecks etwa eine Schieblehre verenden und mit einem Winkelmesser den Abstand zwischen Laser und Holzrahmen exakter bestimmen. Mit einem Laser, der nur Licht einer Wellenlänge aussendet, könnte man die Punkte des Beugungsmuster genauer übertragen. Dies würde ebenfalls durch einen fest installierten Holzrahmen vereinfacht werden.
+\end{flushleft}
+
 \section{Literaturverzeichnis}
+\begin{flushleft}
+1 \quad Gerd Wedler: Lehrbuch der physikalischen Chemie, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim,2004, Seite 109-130.\\
+2\quad Götz, Eckhold: Sriptum zur Einführung in die physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015 Seite 14-18.\\
+3 \quad Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 1-12.\\
+\end{flushleft}
 
 %\textbf{Interferenz und Wellenlängenmessung am 9.11.2015} \\
 
