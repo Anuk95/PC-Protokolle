@@ -89,7 +89,7 @@
 
 \rule{\textwidth}{1pt}\\[0.5cm]
 {\huge \bfseries
-  V1: Interferenz\\[1.5ex]
+  V2: Interferenz\\[1.5ex]
   und Wellenlängenmessung}\\[0.5cm]
 \rule{\textwidth}{1pt}
 
@@ -122,13 +122,6 @@ Assistentin: & Annemarie Kehl\\
 \tableofcontents
 
 \newpage
-
-
-%\textbf{Interferenz und Wellenlängenmessung am 9.11.2015} \\
-
-%Name: Julia Stachowiak \\
-%Versuchspartner: Alea Tokita \\
-%Assistentin: \\ \\
 
 \section{Theoretische Grundlagen}
 Gegeben sind zwei Siebgitter, eines davon mit bekannter und eines mit unbekannter Gitterkonstante. Nacheinander werden sie mit einem Laserstrahl durchleuchtet und das entstehende Interferenzmuster ausgewertet. Ziel des Versuches ist es, daran die Wellenlänge des Lasers und anschließend die unbekannte Gitterkonstante berechnen zu können.
@@ -167,7 +160,7 @@ Die Relation zu der Periodendauer $T$ gibt die Kreisfrequenz $\omega =\frac{2\pi
 %$k= \frac{2\pi}{\lambda}$
 
 \subsection{Phasengeschwindigkeit und Gangunterschied}
-Die Ausbreitungsgeschwindigkeit $c$, mit der sich eine Phase einer Welle (der augenblickeliche Zustand, z.B. ein Minimum) im Raum fortbewegt, wird als Phasengeschwindigkeit $v$ in Abhängigkeit zu der Frequenz $v=\frac{1}{T}$ und der Wellenlänge $\lambda$ beschrieben:\\
+Die Ausbreitungsgeschwindigkeit $c$, mit der sich eine Phase einer Welle (der augenblickliche Zustand, z.B. ein Minimum) im Raum fortbewegt, wird als Phasengeschwindigkeit $v$ in Abhängigkeit zu der Frequenz $v=\frac{1}{T}$ und der Wellenlänge $\lambda$ beschrieben:\\
 \par
 \begin{equation}
 \vec{v}_p = {v}\cdot{\lambda}
@@ -175,7 +168,7 @@ Die Ausbreitungsgeschwindigkeit $c$, mit der sich eine Phase einer Welle (der au
 \\
 \par
 
-Die Phasengeschwindigkeit wird durch folgende Grafik verdeutlicht:
+Phasengeschwindigkeit und Gangunterschied werden in Abbildung 1 verdeutlicht.
 
 \begin{figure} [h]
 \begin{center}
@@ -209,11 +202,17 @@ Ist $\delta$ jedoch ein ungradzahliges Vielfaches der halben Wellenlänge, so tr
 Trifft eine Welle auf ein Hindernis, so verändert sie ihren geometrisch vorgeschriebenen Weg, dh. sie wird gestreut. %Der Begriff Streuung ist ein Sammelbegriff für viele physikalische Phänomene wie Reflexion, Brechung, Beugung etc., bei denen die Welle außerdem ihre Phase und Wellenlänge $\lambda$ verändern kann. 
 Trifft ein Wellenzug senkrecht auf ein Gitter mit der Gitterkonstante $d$, so werden seine verschiedenen Wellen an benachbarten Gitterstäben unter dem Beugungswinkel $\beta_n$ gebeugt. Konstruktive Interferenz ergibt sich nur, wenn (5) zutrifft, dh. der Gangunterschied $\delta$ ein ganzzahliges Vielfaches von $\lambda$ beträgt.
 
-Bei Abbildung des entstehenden Musters auf einen Schirm wird ein Beugungsbild der Wellen mit konstruktiver Interferenz sichtbar.
+\begin{figure} [h]
+\begin{center}
+\includegraphics[scale=0.5]{Beugungsbild.png} \end{center}
+\caption{Auf den Schirm abgebildetes Beugungsbild}
+\end{figure}
+
+Bei Abbildung des entstehenden Musters (Abbildung 2) auf einen Schirm wird ein Beugungsbild der Wellen mit konstruktiver Interferenz sichtbar. Die Beugungsordnung beschreibt, an welcher Gitterebene die Welle gebeugt wurde. 
 
 \begin{figure} [h]
 \begin{center}
-\includegraphics[scale=0.75]{Gangunterschied.png} \end{center}
+\includegraphics[scale=0.65]{Gangunterschied.png} \end{center}
 \caption{Entstehung des Gangunterschiedes $\delta$ bei Beugung an einem Gitter}
 \end{figure}
 
@@ -238,8 +237,6 @@ Nach Übertragung der Punkte werden die Millitmeterpapiere von dem Holzrahmen ge
 
 
 \section{Messwerte}
-
-
 
 \begin{table} [h]
 \centering
@@ -274,7 +271,7 @@ Abstand Laser- Holzrahmen: $z_0$ = 70 cm
 
 \section{Auswertung}
 
-Zwischem dem Gitter und  
+Die auf dem Schirm abgebildeten Punkte bilden die Beugungsebenen nullten bis 3. bzw. -3. Grades unterhalb und oberhalb der nullten Ebene. Die Abstände der Punkte oberhalb und unterhalb der nullten Beugunsebene ergeben die Strecke $y_n$. $z_0= 0,7 m$ beschreibt den Abstand zwischen Laser und Holzrahmen. 
 
 \begin{figure} [h]
 \begin{center}
@@ -282,10 +279,203 @@ Zwischem dem Gitter und
 \caption{Beugungswinkel $\beta_n$ im Verhältnis zu $z_0$ und $y_n$}
 \end{figure}
 
+Es ergibt sich ein rechtwinkliges Dreick (Abildung 5), sodass die Begungswinkel $\beta_n$ zu errechnen sind:
+
+\begin{equation}
+\beta_n = arctan(\frac{y_n}{z_0})
+\end{equation}
+
+\par
+
+Somit ergeben sich für die Winkel folgende Werte: 
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{4 cm}||p{4 cm}|}
+        \hline
+		n& $\beta_n$\\
+         \hline 
+         $3$ & $2,291^\circ$  \\
+         \hline
+         $2$ & $1,555^\circ$\\
+         \hline
+         $1$ & $0,737^\circ$ \\
+         \hline
+         $-1$ & $0,737^\circ$ \\
+         \hline
+         $-2$ & $1,473^\circ$ \\
+         \hline             
+         $-3$ & $2,291^\circ$ \\
+         \hline
+\end{tabular}
+\end{table}
+
+Wie auf Abbildung 3 ersichtlich, ergibt sich ein zweites Dreieck mit dem gleichen Winkel $\beta_n$, dessen Seitenlängen die (für das erste Gitter bekannte) Gitterkonstante $d= 50,1\mu=50,1\cdot10^{-6}m$, als auch den unbekannten Ganunterschied $\delta$ zeigen. Damit ist folgende Formel aufgestellt:
+
+\begin{equation}
+\sin{\beta_n}=\frac{\delta}{d}\cdot n
+\end{equation}
+
+Damit die Wellen konstruktiv miteinander interferieren können, muss der Gangunterschied $\delta$ ein ganzzahliges Vielfaches von $\lambda$ betragen und kann somit mit $\lambda$ gleichgesetzt werden. Durch Umstellen der Gleichung nach $\delta$ bzw. $\lambda$ ergibt sich folgende Formel:
+
+\begin{equation}
+\lambda = \frac{d\cdot \sin\beta_n}{|n|}
+\end{equation}
+
+Für die Wellenlängen ergeben sich so folgende Werte:
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{4 cm}||p{4 cm}|}
+        \hline
+		n& $\lambda$ in m\\
+         \hline 
+         $3$ & $6,676\cdot10^{-7}$  \\
+         \hline
+         $2$ & $6,789\cdot10^{-7}$\\
+         \hline
+         $1$ & $6,444\cdot10^{-7}$ \\
+         \hline
+         $-1$ & $6,444\cdot10^{-7}$ \\
+         \hline
+         $-2$ & $6,440\cdot10^{-7}$ \\
+         \hline             
+         $-3$ & $6,676\cdot^{-7}$ \\
+         \hline
+\end{tabular}
+\end{table}
+
+Zur Berechnung des Mittelwertes wird folgende Formel angewandt:
+
+\[\bar{x} =\frac{1}{N}\sum_{i=1}^n x_i\] mit N=6
+
+Somit ergibt sich für $\bar{x} = 6,580\cdot10^{-7} m $
+
+\subsection{Bestimmung von $\lambda$ aus der Auftragung}
+
+Nach Gleichung 6 ergibt sich:
+
+\begin{equation}
+\sin\beta_n = \frac{n}{d}\cdot \lambda
+\end{equation}
+
+Nach der Allgemeinform für lineare Gleichungssysteme ergibt sich hieraus somit $\lambda$ als Steigung und kann der Auftragung entnommen werden. Somit werden für ${lambda}$ gegen $\frac{|n|}{d}$ folgende Werte aufgetragen:
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{4 cm}||p{4 cm}|p{4 cm}}
+        \hline
+		n & $\sin(\beta_n)$ & $\frac{|n|}{d}$\\
+         \hline 
+         $3$ & 0,4 & 59880 m  \\
+         \hline
+         $2$ & 0,28 & 39920 m \\
+         \hline
+         $1$ & 0,013 & 19960 m\\
+         \hline
+         $-1$ & 0,013 &    \\
+         \hline
+         $-2$ & 0,026 &    \\
+         \hline             
+         $-3$ & 0,04 &    \\
+         \hline
+\end{tabular}
+\end{table}
+
+Aus dem Steigungsdreieck in der Auftragung ergibt sich somit für $\lambda$ :
+
+\begin{equation}
+\lambda =  \frac{\Delta \sin(\beta_n)}{\Delta\frac{n}{d}} = \frac{0,04 - 0,013}{59880 - 19960} = 6,764 \cdot 10^{-7} m
+\end{equation}
+
+Daraus lässt sich die Gitterkonstante errechnen und mit folgender Formel ergeben sich folgende Werte:
+
+\begin{equation}
+d = \dfrac{n\cdot \lambda}{\sin(\beta_|n|)} \quad \mathrm{mit}\quad n= 1 
+\end{equation}
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{4 cm}||p{4 cm}|}
+        \hline
+		n & d \\
+         \hline 
+         $3$ & $8,81\cdot 10^{-5}$  \\
+         \hline
+         $2$ & $8,44 \cdot 10 ^{-5}$ \\
+         \hline
+         $1$ & $7,88\cdot 10^{-5}$\\
+         \hline
+         $|-1|$ & $9,46 \cdot 10^{-5} $   \\
+         \hline
+         $|-2|$ & $8,44\cdot 10^{-5}  $  \\
+         \hline             
+         $|-3|$ & $8,44\cdot 10^{-5}$   \\
+         \hline
+\end{tabular}
+\end{table}
+
+Für den Mittelwert ergibt sich:
+$\bar{d} = 8,58\cdot 10^{-5}$
+
+\subsection{Bestimmung von d aus der Auftragung}
+
+Bei einer Auftragung von $\sin_\beta $ gegen $n \cdot \lambda $ ergibt sich d als Steigung (siehe Formel 10). 
+Nach Formel 5 ergeben sich für $\beta_n$ folgende Werte:
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{4 cm}||p{4 cm}|}
+        \hline
+		n & $\beta_n$ \\
+         \hline 
+         $3$ & $1,309^\circ$  \\
+         \hline
+         $2$ & $0,900^\circ$ \\
+         \hline
+         $1$ & $0,491^\circ$\\
+         \hline
+         $-1$ & $0,490^\circ$   \\
+         \hline
+         $-2$ & $0,900^\circ$  \\
+         \hline             
+         $-3$ & $1,391^\circ$   \\
+         \hline
+\end{tabular}
+\end{table}
+
+Daraus errechnet sich der $\sin_n$:
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{4 cm}||p{4 cm}|}
+        \hline
+		n & $\sin(\beta_n)$ \\
+         \hline 
+         $3$ & $0,023$  \\
+         \hline
+         $2$ & $0,016$ \\
+         \hline
+         $1$ & $0,008569$\\
+         \hline
+         $-1$ & $0,007138$   \\
+         \hline
+         $-2$ & $0,016$  \\
+         \hline             
+         $-3$ & $0,024$   \\
+         \hline
+\end{tabular}
+\end{table}
+
+Somit ergibt sich für $d$ aus der Auftragung:
+
+$ d= \frac{\Delta n \cdot \lambda}{\Delta \sin(\beta_n]} = 7,2\cdot 10^{-5} = 72\mu m $
+
+\par
+\par
+\par
 
 
-
-Ja aber am Schluss ist es explodiert!
 
 \section{Fehlerrechnung}
 \subsection{Fehlerfortpflanzung}
@@ -391,41 +581,7 @@ Indem man Fehler minimiert lassen sich noch genauere Ergebnisse, die auch mit de
 3 \quad Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 1-12.\\
 \end{flushleft}
 
-%\textbf{Interferenz und Wellenlängenmessung am 9.11.2015} \\
 
-%Name: Julia Stachowiak \\
-%Versuchspartner: Alea Tokita \\
-%Assistentin: \\ \\
-
-
-
-%\begin{table}
-%\centering
-%\begin{large}
-
-%\end{large}
-%\begin{tabular}{|p{4 cm}||p{4 cm}|p{4 cm}|}
-  %      \hline
-   %       Abstand  & Gitter 1  & Gitter 2 \\
-    %      \textit{in cm} & & \\
-         
-         
-     %    \hline 
-      %   $y_3 $& & \\
-      %   \hline
-      %   $y_2 $& & \\
-      %   \hline
-      %   $y_{1} $& & \\
-         
-      %   \hline
-      %   $y_{-1}$& & \\
-      %   \hline
-      %   $y_{-2}$& & \\
-       %  \hline             
-       %  $y_{-3}$& & \\
-     %    \hline
-%\end{tabular}
-%\end{table}
 
 
 
