@@ -1,0 +1,205 @@
+\documentclass[11pt,a4paper,titlepage,headinclude,bibtotoc]{scrartcl}
+
+%---- Allgemeine Layout Einstellungen ------------------------------------------
+
+% Für Kopf und Fußzeilen, siehe auch KOMA-Skript Doku
+\usepackage[komastyle]{scrpage2}
+\pagestyle{plain}
+\setheadsepline{0.5pt}[\color{black}]
+\automark[section]{chapter}
+
+
+%Einstellungen für Figuren- und Tabellenbeschriftungen
+\setkomafont{captionlabel}{\sffamily\bfseries}
+\setcapindent{0em}
+
+
+%---- Weitere Pakete -----------------------------------------------------------
+% Die Pakete sind alle in der TeX Live Distribution enthalten. Wichtige Adressen
+% www.ctan.org, www.dante.de
+
+% Sprachunterstützung
+\usepackage[ngerman]{babel}
+
+% Benutzung von Umlauten direkt im Text
+% entweder "latin1" oder "utf8"
+\usepackage[utf8]{inputenc}
+
+% Pakete mit Mathesymbolen und zur Beseitigung von Schwächen der Mathe-Umgebung
+\usepackage{latexsym,exscale,stmaryrd,amssymb,amsmath}
+
+
+\usepackage[nointegrals]{wasysym}
+\usepackage{eurosym}
+
+% Anderes Literaturverzeichnisformat
+%\usepackage[square,sort&compress]{natbib}
+\usepackage{hyperref}
+% Für Farbe
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+
+% Caption neben Abbildung
+\usepackage{sidecap}
+
+% Befehl für "Entspricht"-Zeichen
+\newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
+% Befehl für Errorfunction
+\newcommand{\erf}[1]{\text{ erf}\ensuremath{\left( #1 \right)}}
+
+%Fußnoten zwingend auf diese Seite setzen
+\interfootnotelinepenalty=1000
+
+%Für chemische Formeln (von www.dante.de)
+%% Anpassung an LaTeX(2e) von Bernd Raichle
+\makeatletter
+\DeclareRobustCommand{\chemical}[1]{%
+  {\(\m@th
+   \edef\resetfontdimens{\noexpand\)%
+       \fontdimen16\textfont2=\the\fontdimen16\textfont2
+       \fontdimen17\textfont2=\the\fontdimen17\textfont2\relax}%
+   \fontdimen16\textfont2=2.7pt \fontdimen17\textfont2=2.7pt
+   \mathrm{#1}%
+   \resetfontdimens}}
+\makeatother
+
+%Honecker-Kasten mit $$\shadowbox{$xxxx$}$$
+\usepackage{fancybox}
+
+%SI-Package
+\usepackage{siunitx}
+
+%keine Einrückung, wenn Latex doppelte Leerzeile
+\parindent0pt
+
+%Bibliography \bibliography{literatur} und \cite{gerthsen}
+%\usepackage{cite}
+\usepackage{babelbib}
+\selectbiblanguage{ngerman}
+
+\begin{document}
+
+\centering
+
+\section*{V1: Bestimmung der Loschmidt- Zahl: Messwerte}
+
+\begin{flushleft}
+\begin{Large}
+\begin{tabular}{ll}
+Durchführende: &  Alea Tokita, Julia Stachowiak\\
+Assistentin: & Annemarie Kehl\\
+ Versuchsdatum: & 09.11.2015\\
+\end{tabular}
+\end{Large}
+\end{flushleft}
+
+
+\subsection*{Aluminiumkristall}
+
+Gitteronstante $a= 4,049\AA$
+
+\begin{table} [h]
+\centering
+\begin{tabular}{|p{3 cm}||p{3 cm}|p{3 cm}|p{3 cm}|}
+        \hline
+		Messung n& Masse $m$ in & Durchmesser $d$ in & Länge $l$ in\\
+         \hline 
+         1& & &\\
+          \hline 
+         2& & &\\
+          \hline 
+         3& & &\\
+          \hline 
+         4& & &\\
+          \hline 
+         5& & &\\
+          \hline 
+         6& & &\\
+          \hline 
+         7& & &\\
+          \hline 
+         8& & &\\
+          \hline 
+         9& & &\\
+          \hline 
+         10& & &\\
+         \hline
+         Mittelwert $\bar{x}$ & & &\\
+         \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Lithiumfluorid-Kristall}
+
+Gitteronstante $a= 4,018\AA$
+
+\begin{table} [h!]
+\centering
+\begin{tabular}{|p{3 cm}||p{3 cm}|p{3 cm}|p{3 cm}|}
+        \hline
+		Messung n& Masse $m$ in & Durchmesser $d$ in & Länge $l$ in\\
+         \hline 
+         1& & &\\
+          \hline 
+         2& & &\\
+          \hline 
+         3& & &\\
+          \hline 
+         4& & &\\
+          \hline 
+         5& & &\\
+          \hline 
+         6& & &\\
+          \hline 
+         7& & &\\
+          \hline 
+         8& & &\\
+          \hline 
+         9& & &\\
+          \hline 
+         10& & &\\
+         \hline
+         Mittelwert $\bar{x}$ & & &\\
+         \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Kalziumfluorid-Kristall}
+
+Ionenabstand $r=2,365\AA$
+
+\begin{table} [h!]
+\centering
+\begin{tabular}{|p{3 cm}||p{3 cm}|p{3 cm}|p{3 cm}|}
+        \hline
+		Messung n& Masse $m$ in & Durchmesser $d$ in & Länge $l$ in\\
+         \hline 
+         1& & &\\
+          \hline 
+         2& & &\\
+          \hline 
+         3& & &\\
+          \hline 
+         4& & &\\
+          \hline 
+         5& & &\\
+          \hline 
+         6& & &\\
+          \hline 
+         7& & &\\
+          \hline 
+         8& & &\\
+          \hline 
+         9& & &\\
+          \hline 
+         10& & &\\
+         \hline
+         Mittelwert $\bar{x}$ & & &\\
+         \hline
+\end{tabular}
+\end{table}
+
+
+\end{document}
