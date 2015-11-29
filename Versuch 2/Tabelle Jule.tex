@@ -44,10 +44,12 @@
 % Caption neben Abbildung
 \usepackage{sidecap}
 
+
 % Befehl für "Entspricht"-Zeichen
 \newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
 % Befehl für Errorfunction
 \newcommand{\erf}[1]{\text{ erf}\ensuremath{\left( #1 \right)}}
+
 
 %Fußnoten zwingend auf diese Seite setzen
 \interfootnotelinepenalty=1000
@@ -64,7 +66,11 @@
    \mathrm{#1}%
    \resetfontdimens}}
 \makeatother
-
+\usepackage{textcomp}
+\usepackage{upgreek}
+%\begin{document}
+%$\upmu$
+%\end{document}
 %Honecker-Kasten mit $$\shadowbox{$xxxx$}$$
 \usepackage{fancybox}
 
@@ -111,8 +117,8 @@ Assistentin: & Annemarie Kehl\\
 \fbox{
   \begin{minipage}[t][2cm][t]{6cm} 
    Werte:\\
-   $\Delta \lambda = 676 \pm 52 \mathrm {nm} $\\
-   $ d \quad = 72 \pm 3 \mathrm{\mu m} $\\
+   $\Delta \lambda = (676 \pm 52) \quad \mathrm {nm} $\\
+   $ d \quad = (72 \pm 3) \quad \mathrm{\upmu m} $\\
   \end{minipage}
 }
 \end{Large}
@@ -128,7 +134,7 @@ Gegeben sind zwei Siebgitter, eines davon mit bekannter und eines mit unbekannte
 
 \subsection{Elektromagnetische Wellen}
 %\begin{flushleft}
-Licht ist elektromagnetische Strahlung, die aus einzelnen Transversalwellen besteht. Diese harmonischen Wellen bewegen sich mit der Lichtgeschwindigkeit $c= 299 792,458 \frac{km}{s}$ durch den Raum. Sie können durch folgende Sinusfunktion in Abhängigkeit des Ortes $x$ und der Zeit $t$ beschrieben werden:
+Licht ist elektromagnetische Strahlung, die aus einzelnen Transversalwellen besteht. Diese harmonischen Wellen bewegen sich mit der Lichtgeschwindigkeit $c= 299 792 458\mathrm{ms^{-1}}$ durch den Raum. Sie können durch folgende Sinusfunktion in Abhängigkeit des Ortes $x$ und der Zeit $t$ beschrieben werden:
 \\
 \par %= Leerzeile
 \begin{equation}
@@ -173,7 +179,7 @@ Phasengeschwindigkeit und Gangunterschied werden in Abbildung 1 verdeutlicht.
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.75]{Phasengeschwindigkeit2.png} \end{center}
-\caption{Phasengeschwindigkeit und Gangunterschied}
+\caption {Phasengeschwindigkeit und Gangunterschied \quad [Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 7]}
 \end{figure}
 %Achtung: hier Phasengeschwindigkeit als c
 
@@ -182,7 +188,7 @@ Werden zwei Wellen mit gleicher Phasengeschwindigkeit zeitlich verzögert ausges
 \begin{figure} [h!]
 \begin{center}
 \includegraphics[scale=0.65]{Gangunterschied.png} \end{center}
-\caption{Entstehung des Gangunterschiedes $\delta$ bei Beugung an einem Gitter}
+\caption {Entstehung des Gangunterschiedes $\delta$ bei Beugung an einem Gitter \quad [Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 11]}
 \end{figure}
 
 \vspace{2 cm}
@@ -213,12 +219,13 @@ Trifft ein Wellenzug senkrecht auf ein Gitter mit der Gitterkonstante $d$, so we
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.5]{Beugungsbild.png} \end{center}
-\caption{Auf den Schirm abgebildetes Beugungsbild}
+\caption{Auf den Schirm abgebildetes Beugungsbild \quad [Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 10]}
 \end{figure}
 
 Bei Abbildung des entstehenden Musters (Abbildung 3) auf einen Schirm wird ein Beugungsbild der Wellen mit konstruktiver Interferenz sichtbar. Die Beugungsordnung beschreibt, an welcher Gitterebene die Welle gebeugt wurde. 
 
 
+\clearpage
 
 \section{Experimentelles}
 
@@ -227,7 +234,7 @@ Bei Abbildung des entstehenden Musters (Abbildung 3) auf einen Schirm wird ein B
 \subsubsection{Skizze der Apparatur}
 \begin{figure} [h!]
 \begin{center}
-\includegraphics[scale=0.75]{Versuchsaufbau.png} \end{center}
+\includegraphics[scale=1]{Versuchsaufbau2.png} \end{center}
 \caption{Versuchsaufbau}
 \end{figure}
 
@@ -242,54 +249,57 @@ Nach Übertragung der Punkte werden die Millitmeterpapiere von dem Holzrahmen ge
 
 \section{Messwerte}
 
-\begin{table} [h!]
-\centering
-\begin{large}
+%\begin{table} [h!]
+%\centering
+%\begin{large}
 
-\end{large}
-\begin{tabular}{|p{4 cm}||p{4 cm}|p{4 cm}|}
-        \hline
-          Abstand  & Gitter 1  & Gitter 2 \\
-          in mm & d=50,1$\mu$m & d unbekannt\\
-         \hline 
-         $y_3 $& 28 & 16 \\
-         \hline
-         $y_2 $& 19 & 11\\
-         \hline
-         $y_{1} $& 9,0 & 6 \\
-         \hline
-         $y_{-1}$& 9,0 & 5 \\
-         \hline
-         $y_{-2}$& 18 & 11 \\
-         \hline             
-         $y_{-3}$& 28 & 17 \\
-         \hline
-\end{tabular}
-\end{table}
+%\end{large}
+%\begin{tabular}{|p{4 cm}||p{4 cm}|p{4 cm}|}
+ %       \hline
+  %        Abstand  & Gitter 1  & Gitter 2 \\
+   %       in mm & d=50,1$\mu$m & d unbekannt\\
+    %     \hline 
+     %    $y_3 $& 28 & 16 \\
+      %   \hline
+       %  $y_2 $& 19 & 11\\
+        % \hline
+       %  $y_{1} $& 9,0 & 6 \\
+       %  \hline
+       %  $y_{-1}$& 9,0 & 5 \\
+       %  \hline
+       %  $y_{-2}$& 18 & 11 \\
+       %  \hline             
+      %   $y_{-3}$& 28 & 17 \\
+       %  \hline
+%\end{tabular}
+%\end{table}
 
 
-
+Die Messwerte sind im Messrotokoll zu finden.\\\\
+Ergänzender Wert:\\
 Abstand Laser- Holzrahmen: $z_0$ = 70 cm
 
 
-
+\newpage
 \section{Auswertung}
 
-Die auf dem Schirm abgebildeten Punkte bilden die Beugungsebenen nullten bis 3. bzw. -3. Grades unterhalb und oberhalb der nullten Ebene. Die Abstände der Punkte oberhalb und unterhalb der nullten Beugunsebene ergeben die Strecke $y_n$. $z_0= 0,7 m$ beschreibt den Abstand zwischen Laser und Holzrahmen. 
+Die auf dem Schirm abgebildeten Punkte bilden die Beugungsebenen nullten bis 3. bzw. -3. Grades unterhalb und oberhalb der nullten Ebene. Die Abstände der Punkte oberhalb und unterhalb der nullten Beugunsebene ergeben die Strecke $y_\mathrm {n} \cdot z_0= 0,7 $ m beschreibt den Abstand zwischen Laser und Holzrahmen. 
 
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.4]{Dreieck.png} \end{center}
-\caption{Beugungswinkel $\beta_n$ im Verhältnis zu $z_0$ und $y_n$}
+\caption{Beugungswinkel $\beta_n$ im Verhältnis zu $z_0$ und $y_n$[Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 11]}
 \end{figure}
 
 Es ergibt sich ein rechtwinkliges Dreick (Abildung 5), sodass die Begungswinkel $\beta_n$ zu errechnen sind:
 
 \begin{equation}
-\beta_n = arctan(\frac{y_n}{z_0})
+\beta_n = \mathrm {arctan} \left(\frac{y_n}{z_0}\right)
 \end{equation}
 
 \par
+
+\vspace{2cm}
 
 Somit ergeben sich für die Winkel folgende Werte: 
 
@@ -314,13 +324,13 @@ Somit ergeben sich für die Winkel folgende Werte:
 \end{tabular}
 \end{table}
 
-Wie auf Abbildung 3 ersichtlich, ergibt sich ein zweites Dreieck mit dem gleichen Winkel $\beta_n$, dessen Seitenlängen die (für das erste Gitter bekannte) Gitterkonstante $d= 50,1\mu=50,1\cdot10^{-6}m$, als auch den unbekannten Ganunterschied $\delta$ zeigen. Damit ist folgende Formel aufgestellt:
+Wie auf Abbildung 3 ersichtlich, ergibt sich ein zweites Dreieck mit dem gleichen Winkel $\beta_n$, dessen Seitenlängen die (für das erste Gitter bekannte) Gitterkonstante\\ $d= 50,1 \upmu \mathrm{m} =50,1\cdot10^{-6} \mathrm{m}$, als auch den unbekannten Gangunterschied $\delta$ zeigen. Damit ist folgende Formel aufgestellt:
 
 \begin{equation}
 \sin{\beta_n}=\frac{\delta}{d}\cdot n
 \end{equation}
 
-Da nach Formel 3 $\lambda$ für die konstruktive Interferenz ein Vielfaches der von $\delta$ sein muss, ergibt sich durch Umstellen der Gleichung nach $\delta$ bzw.$\lambda$ folgende Formel:
+Da nach Formel 3 $\lambda$ für die konstruktive Interferenz ein Vielfaches der von $\delta$ sein muss, ergibt sich durch Umstellen der Gleichung nach $\delta$ bzw. $\lambda$ folgende Formel:
 
 \begin{equation}
 \lambda = \frac{d\cdot \sin\beta_n}{|n|}
@@ -344,7 +354,7 @@ Für die Wellenlängen ergeben sich so folgende Werte:
          \hline
          $-2$ & $6,440\cdot10^{-7}$ \\
          \hline             
-         $-3$ & $6,676\cdot^{-7}$ \\
+         $-3$ & $6,676\cdot^10{-7}$ \\
          \hline
 \end{tabular}
 \end{table}
@@ -352,17 +362,12 @@ Für die Wellenlängen ergeben sich so folgende Werte:
 Für den Mittelwert nach
 \[\bar{x} =\frac{1}{N}\sum_{i=1}^n x_i\] mit N=6
 
-ergibt sich für $\bar{x} = 6,580\cdot10^{-7} m $.
+ergibt sich für $\bar{x} = 6,580\cdot10^{-7}$ m .
+
 
 \subsection{Bestimmung von $\lambda$ aus der Auftragung}
 
-Nach Gleichung 6 ergibt sich:
-
-\begin{equation}
-\sin\beta_n = \frac{n}{d}\cdot \lambda
-\end{equation}
-
-Nach der Allgemeinform für lineare Gleichungssysteme ergibt sich hieraus somit $\lambda$ als Steigung und kann der Auftragung entnommen werden. Somit werden für ${\lambda}$ gegen $\frac{|n|}{d}$ folgende Werte aufgetragen:
+Nach der Allgemeinform für lineare Gleichungssysteme ergibt sich aus Gleichung 7 $\lambda$ als Steigung und kann der Auftragung entnommen werden. Somit werden für ${\lambda}$ gegen $\frac{|n|}{d}$ folgende Werte aufgetragen:\\
 
 \begin{table} [h]
 \centering
@@ -370,17 +375,17 @@ Nach der Allgemeinform für lineare Gleichungssysteme ergibt sich hieraus somit 
         \hline
 		n & $\sin(\beta_n)$ & $\frac{|n|}{d}$\\
          \hline 
-         $3$ & 0,4 & 59880 m  \\
+         $3$ & 0,40 & 59880 m  \\
          \hline
          $2$ & 0,28 & 39920 m \\
          \hline
          $1$ & 0,013 & 19960 m\\
          \hline
-         $-1$ & 0,013 &    \\
+         $-1$ & 0,013 &  19960  \\
          \hline
-         $-2$ & 0,026 &    \\
+         $-2$ & 0,026 & 39920   \\
          \hline             
-         $-3$ & 0,04 &    \\
+         $-3$ & 0,040 & 59880   \\
          \hline
 \end{tabular}
 \end{table}
@@ -388,20 +393,20 @@ Nach der Allgemeinform für lineare Gleichungssysteme ergibt sich hieraus somit 
 Aus dem Steigungsdreieck in der Auftragung ergibt sich somit für $\lambda$ :
 
 \begin{equation}
-\lambda =  \frac{\Delta \sin(\beta_n)}{\Delta\frac{n}{d}} = \frac{0,04 - 0,013}{59880 - 19960} = 6,764 \cdot 10^{-7} m
+\lambda =  \frac{\Delta \sin(\beta_n)}{\Delta\frac{n}{d}} = \frac{0,04 - 0,013}{59880 - 19960} = 6,764 \cdot 10^{-7} \mathrm{m}
 \end{equation}
 
-Daraus lässt sich die Gitterkonstante errechnen und mit folgender Formel ergeben sich folgende Werte:
+Nun lässt sich aus den Messwerten für das zweite Gitter dessen Gitterkonstante errechnen. Mit folgender Formel ergeben sich die Werte:
 
 \begin{equation}
-d = \dfrac{n\cdot \lambda}{\sin(\beta_|n|)} \quad \mathrm{mit}\quad n= 1 
+d = \dfrac{n\cdot \lambda}{\sin(\beta_{|n|})} 
 \end{equation}
 
 \begin{table} [h]
 \centering
 \begin{tabular}{|p{4 cm}||p{4 cm}|}
         \hline
-		n & d \\
+		n & d in m \\
          \hline 
          $3$ & $8,81\cdot 10^{-5}$  \\
          \hline
@@ -419,11 +424,11 @@ d = \dfrac{n\cdot \lambda}{\sin(\beta_|n|)} \quad \mathrm{mit}\quad n= 1
 \end{table}
 
 Für den Mittelwert ergibt sich:
-$\bar{d} = 8,58\cdot 10^{-5}$
+$\bar{d} = 8,58\cdot 10^{-5}$ m
 
 \subsection{Bestimmung von d aus der Auftragung}
 
-Bei einer Auftragung von $\sin_\beta $ gegen $n \cdot \lambda $ ergibt sich d als Steigung (siehe Formel 10). 
+Bei einer Auftragung von $\sin\beta $ gegen $n \cdot \lambda $ ergibt sich d als Steigung (siehe Formel 10). 
 Nach Formel 5 ergeben sich für $\beta_n$ folgende Werte:
 
 \begin{table} [h]
@@ -446,9 +451,7 @@ Nach Formel 5 ergeben sich für $\beta_n$ folgende Werte:
          \hline
 \end{tabular}
 \end{table}
-
-\vspace{3 cm}
-
+\vspace{6cm}
 Daraus errechnet sich der $\sin_n$:
 
 
@@ -462,9 +465,9 @@ Daraus errechnet sich der $\sin_n$:
          \hline
          $2$ & $0,016$ \\
          \hline
-         $1$ & $0,008569$\\
+         $1$ & $0,0086$\\
          \hline
-         $-1$ & $0,007138$   \\
+         $-1$ & $0,0071$\\
          \hline
          $-2$ & $0,016$  \\
          \hline             
@@ -477,7 +480,7 @@ Daraus errechnet sich der $\sin_n$:
 
 Somit ergibt sich für $d$ aus der Auftragung:
 
-$ d= \frac{\Delta n \cdot \lambda}{\Delta \sin(\beta_n]} = 7,2\cdot 10^{-5} = 72\mu m $
+$ d= \frac{\Delta n \cdot \lambda}{\Delta \sin(\beta_n)} = 7,2\cdot 10^{-5} = 72\upmu $m
 
 
 
@@ -485,13 +488,15 @@ $ d= \frac{\Delta n \cdot \lambda}{\Delta \sin(\beta_n]} = 7,2\cdot 10^{-5} = 72
 
 \section{Fehlerrechnung}
 \subsection{Fehlerfortpflanzung}
-Im Versuch entstehen Fehler, sowohl durch die Messungen mit dem Zollstock als auch bei der Übertragung und Ausmessen der Werte auf dem Millimeterpapier. Messungenauigkeiten beim Messen mit dem Zollstock entstehen dadurch, dass es schwierig ist, den Zollstock exakt so anzulegen, dass die kürzeste Strecke zwischen Holzrahmen und Laser gemessen wird, auch ist die Skalierung nur auf einen Millimeter genau gegeben. Wir gehen daher von folgendem Fehler aus: $\Delta_{Zollstock}={2} \cdot{10^{-2}}m$. Die Messungenauigkeiten bezüglich des Millimeterpapiers entstehen durch ungenaue Übertragung, etwa sind die Laserpunkte eher in Tropfenform, sodass der Mittelpunkt nicht exakt bestimmt werden kann, des weiteren ist die Messung der Abstände nur auf Millimeter genau. $\Delta_{Millimeterpapier}={2} \cdot {10^{-3}}$ \\
+Im Versuch entstehen Fehler, sowohl durch die Messungen mit dem Zollstock als auch bei der Übertragung und Ausmessen der Werte auf dem Millimeterpapier. Messungenauigkeiten beim Messen mit dem Zollstock entstehen dadurch, dass es schwierig ist, den Zollstock exakt so anzulegen, dass die kürzeste Strecke zwischen Holzrahmen und Laser gemessen wird, auch ist die Skalierung nur auf einen Millimeter genau gegeben. Wir gehen daher von folgendem Fehler aus: $\Delta_{Z}={2} \cdot{10^{-2}}$ m. Die Messungenauigkeiten bezüglich des Millimeterpapiers entstehen durch ungenaue Übertragung, etwa sind die Laserpunkte eher in Tropfenform, sodass der Mittelpunkt nicht exakt bestimmt werden kann, des weiteren ist die Messung der Abstände nur auf Millimeter genau.\\ $\Delta_{y}={2} \cdot {10^{-3}}$ m \\
 
 Diese Fehler setzten sich nun in den weiteren Berechnungen fort. Zunächst lassen sich mithilfe der Gaußschen Fehlerfortpflanzung maximale und minimale Werte mithilfe folgender Formel für die erste Berechnung des Winkels $\beta$ errechnen:\\
 
+%\Delta \sin \beta = \sqrt{\left(\dfrac{1}{z_{0}} \cdot {2} \cdot %{10^{-3}})^{2} \right) + \left(- \dfrac{y_|n|}{z_0^{2}} \cdot {2} \cdot %{10^{-2}})^{2} }
+
 \begin{equation}
-\Delta \beta = \sin( \quad \sqrt{({\dfrac{1}{y_{|n|}^{2}+z_{0}^{2}}} \cdot {{2} \cdot {10^{-3}}})^{2} + (- {\dfrac{1}{y_{|n|}^{2}+z_{0}^{2}}} \cdot {{2} \cdot {10^{-2}}})^{2}} \quad)
-\end{equation}\\\\\
+\Delta \sin \beta = \sqrt{ \left( \dfrac{1}{z_0} \cdot \Delta y_n \right)^2 + \left(- \dfrac{y_n}{z_0} \cdot \right)^2 } 
+\end{equation}
 
 Es ergeben sich die folgenden Werte: \\\\\\\\\\\\
    
@@ -502,7 +507,7 @@ Es ergeben sich die folgenden Werte: \\\\\\\\\\\\
 \centering
 \begin{tabular}{|p{2 cm}||p{3 cm}|p{3 cm}|p{3 cm}|}
 		\hline
-         n & $\sin\beta_n$  & $\sin\beta_max $ & $sin\beta_min$ \\
+         n & $\sin\beta_n$  & $\sin\beta_{max} $ & $sin\beta_{min}$ \\
          \hline 
          $1 $& 0,013& 0,01357 & 0,01215 \\
          \hline
@@ -522,15 +527,15 @@ Es ergeben sich die folgenden Werte: \\\\\\\\\\\\
 \begin{flushleft}
 Diese Werte lassen sich nun in der Auftragung von $ \beta_{|n|} $ gegen $ \frac{|n|}{d} $ als Fehlerbalken einzeichnen. Durch Einzeichnen einer Ausgleichsgeraden ergibt sich eine minimale und maximale Steigung von $ \lambda $.\\
 \vspace{0,5 cm}
-$ \lambda_{max} = 693 \mathrm {nm} $\\
-$ \lambda_{min} = 589 \mathrm {nm} $\\
+$ \lambda_{max} = 693$ nm\\
+$ \lambda_{min} = 589 $ nm\\
 \vspace{0,5 cm}
 
 
 Daraus lässt sich nun der Absolute Fehler mithilfe folgender Formel berechnen:\\
 \vspace{0,5 cm}
 
-$ \Delta \lambda = \dfrac{ \lambda_{max}-\lambda_{min}}{2}= \pm 52 \mathrm {nm} $\\
+$ \Delta \lambda = \dfrac{ \lambda_{max}-\lambda_{min}}{2}= \pm 52 $ nm\\
 \vspace{0,5 cm}
 Der Fehler von $ \Delta \lambda $ lässt sich nun in Form von Fehlerbalken in die zweite Auftragung zur Bestimmung von \emph{d} eintragen. Es ergeben sich folgende Werte für die Fehlerbalken:
 \vspace{3 cm}
@@ -553,10 +558,10 @@ Der Fehler von $ \Delta \lambda $ lässt sich nun in Form von Fehlerbalken in di
 \end{table}
  
 In diese Auftragung lässt sich wieder eine Ausgleichsgerade maximaler und minimaler Steigung zeichnen und so ein maximaler und minimaler Wert für \emph{d} ermitteln:
-$ d_{max} = 76 \mathrm{\mu m} $\\
-$ d_{min} = 70 \mathrm{\mu m} $\\
+$ d_{max} = 76  \quad \mathrm{\upmu m}$ \\
+$ d_{min} = 70 \quad \mathrm{\upmu m} $\\
 Der Absolute Fehler wird nun wie folgt berechnet:
-$ \Delta d = \dfrac{ d_{max}-d_{min}}{2}= \pm 3 \mathrm {\mu m} $\\
+$ \Delta d = \dfrac{ d_{max}-d_{min}}{2}= \pm 3 \quad \mathrm{\upmu m} $\\
 \end{flushleft}
 
 \subsection{Diskussion systematischer Fehler}
@@ -567,29 +572,29 @@ Im Versuch können zunächst systematische Fehler beim Abmessen der Längen auft
 
 Für die Wellenlänge erhalten wir aus der Auftragung folgendes Ergebnis:\\
 \begin{center}
-$\Delta \lambda = 676 \pm 52 \mathrm {nm} $\\
-Herstellerangabe $ \Delta \lambda = 630-680 \mathrm {nm} $\\
+$\Delta \lambda = 676 \pm 52  $ nm\\
+Herstellerangabe $ \Delta \lambda = 630-680 $ nm\\
 \end{center}
 
 Die gemessene Wellenlänge liegt im Bereich der Herstellerangaben. Die Fehlergrenzen weichen ein wenig von den Fehlergrenzen der Herstellerangabe ab.\\\\
 
 Für die Gitterkonstante erhalten wir, ebenfalls aus der Auftragung, folgenden Wert:\\\\
 \centering
-$ d = 72 \pm 3 \mathrm{\mu m} $\\
+$ d = 72 \pm 3 \quad \mathrm{\upmu m} $\\
 
 \begin{flushleft}
-Für die Gitterkonstante liegen keine Herstellerangaben vor. Jedoch ist die Gitterkonstante des ersten Gitters mit $d = 50,1 \mathrm{\mu m} $ vom Hersteller gegeben. Bei dem Vergleich der Beugungsmuster ist aufällig, dass die Punkte bei dem zweiten Gitter enger aneinander liegen, was bedeutet, dass es sich um ein Gitter mit einer größeren Gitterkonstante handeln muss. Da sich dies im Vergleich unseres Wertes, auch mit den Fehlergrenzen, mit dem Herstellerwert bestätigen lässt, stimmt unser Wert mindestens in dieser Beziehung.
+Für die Gitterkonstante liegen keine Herstellerangaben vor. Jedoch ist die Gitterkonstante des ersten Gitters mit $d = 50,1 \quad \mathrm{\upmu m} $ vom Hersteller gegeben. Bei dem Vergleich der Beugungsmuster ist aufällig, dass die Punkte bei dem zweiten Gitter enger aneinander liegen, was bedeutet, dass es sich um ein Gitter mit einer größeren Gitterkonstante handeln muss. Da sich dies im Vergleich dem Wertes, auch mit den Fehlergrenzen, mit dem Herstellerwert bestätigen lässt, stimmt der Wert mindestens in dieser Beziehung.
 \vspace{1cm}
-Indem man Fehler minimiert lassen sich noch genauere Ergebnisse, die auch mit den Herstellerangaben besser übereinstimmen. So könnte man etwa anstelle des doch eher ungenauen Zollstock und Geodreiecks etwa eine Schieblehre verenden und mit einem Winkelmesser den Abstand zwischen Laser und Holzrahmen exakter bestimmen. Mit einem Laser, der nur Licht einer Wellenlänge aussendet, könnte man die Punkte des Beugungsmuster genauer übertragen. Dies würde ebenfalls durch einen fest installierten Holzrahmen vereinfacht werden.
+Indem man Fehler minimiert lassen sich noch genauere Ergebnisse, die auch mit den Herstellerangaben besser übereinstimmen. So könnte etwa anstelle des doch eher ungenauen Zollstock und Geodreiecks etwa eine Schieblehre verwendet werden und mit einem Winkelmesser den Abstand zwischen Laser und Holzrahmen exakter bestimmt werden. Mit einem Laser, der nur Licht einer Wellenlänge aussendet, könnte man die Punkte des Beugungsmuster genauer übertragen. Dies würde ebenfalls durch einen fest installierten Holzrahmen vereinfacht werden.
 \end{flushleft}
 
 \section{Literaturverzeichnis}
 \begin{flushleft}
-1 \quad Gerd Wedler: Lehrbuch der physikalischen Chemie, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim,2004, Seite 109-130.\\
+1 \quad Gerd Wedler: $Lehrbuch der physikalischen Chemie$, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
 \vspace{0,5 cm}
-2\quad Götz, Eckhold: Sriptum zur Einführung in die physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015 Seite 14-18.\\
+2\quad Götz, Eckhold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \vspace{0,5 cm}
-3 \quad Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 1-12.\\
+3 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \end{flushleft}
 
 
