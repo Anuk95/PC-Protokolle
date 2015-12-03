@@ -85,6 +85,10 @@
 \usepackage{babelbib}
 \selectbiblanguage{ngerman}
 
+\usepackage{siunitx}
+%\begin{document}
+ % \SI{1.55}{\micro\metre}
+\sisetup{math-micro=\text{µ},text-micro=µ}
 \begin{document}
 
 \begin{titlepage}
@@ -119,7 +123,7 @@ Assistentin: & Annemarie Kehl\\
   \begin{minipage}[t][2cm][t]{6cm} 
    Werte:\\
    $\Delta \lambda = (680 \pm 170) \quad \mathrm {nm} $\\
-   $ d \quad = (72 \pm 8) \quad \mathrm{\upmu m} $\\
+   $ d \quad = (72 \pm 8)$ \si\micro m\\
   \end{minipage}
 }
 \end{Large}
@@ -135,7 +139,7 @@ Gegeben sind zwei Siebgitter, eines davon mit bekannter und eines mit unbekannte
 
 \subsection{Elektromagnetische Wellen}
 %\begin{flushleft}
-Licht ist elektromagnetische Strahlung, die aus einzelnen Transversalwellen besteht. Diese harmonischen Wellen bewegen sich mit der Lichtgeschwindigkeit $c= 299 792 458\mathrm{ms^{-1}}$ \footnote{http://www.einstein-online.info/einsteiger/spezRT/lichtgeschw} durch den Raum. Sie können durch folgende Sinusfunktion in Abhängigkeit des Ortes $x$ und der Zeit $t$ beschrieben werden:
+Licht ist elektromagnetische Strahlung, die aus einzelnen Transversalwellen besteht. Diese harmonischen Wellen bewegen sich mit der Lichtgeschwindigkeit $c= 299 792 458\quad\mathrm{ms^{-1}}$ \footnote{http://www.einstein-online.info/einsteiger/spezRT/lichtgeschw} durch den Raum. Sie können durch folgende Sinusfunktion in Abhängigkeit des Ortes $x$ und der Zeit $t$ beschrieben werden:
 \\
 \par %= Leerzeile
 \begin{equation}
@@ -163,19 +167,24 @@ Phasengeschwindigkeit und Gangunterschied werden in Abbildung 1 verdeutlicht.
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.75]{Phasengeschwindigkeit2.png} \end{center}
-\caption {Phasengeschwindigkeit und Gangunterschied \quad [Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 7]}
+\caption {Phasengeschwindigkeit und Gangunterschied \protect\footnotemark }
 \end{figure}
-%Achtung: hier Phasengeschwindigkeit als c
+\footnotetext{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 7}%Achtung: hier Phasengeschwindigkeit als c
 
-Werden zwei Wellen mit gleicher Phasengeschwindigkeit zeitlich verzögert ausgesandt, so ergibt sich eine Wegdifferenz $\Delta x$, der sogenannte Gangunterschied $\delta$  (siehe Abbildung 1 und 2). 
+Werden zwei Wellen mit gleicher Phasengeschwindigkeit zeitlich verzögert ausgesandt, so ergibt sich eine Wegdifferenz $\Delta x$, der sogenannte Gangunterschied $\delta$  (siehe Abbildung 1 und 2).\\\\\\\\
+
 
 \begin{figure} [h!]
 \begin{center}
 \includegraphics[scale=0.65]{Gangunterschied.png} \end{center}
-\caption {Entstehung des Gangunterschiedes $\delta$ bei Beugung an einem Gitter \quad [Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 11]}
+\caption [Entstehung des Gangunterschiedes $\delta$ bei Beugung an einem Gitter] {Entstehung des Gangunterschiedes $\delta$ bei Beugung an einem Gitter \protect\footnotemark }
+
 \end{figure}
 
-\vspace{2 cm}
+\footnotetext{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 11}
+
+
+\newpage
 
 \subsection{Interferenz}
 Überlagern sich zwei oder mehr Wellen, so führt dies zu einer Amplitudenänderung. Die Wellen verschmelzen zu einer neuen Welle mit größerer oder kleinerer Amplitude, je nachdem, ob gleiche oder unterschiedliche Phasen aufeinandertreffen. Diese Erscheinung wird Interferenz genannt. Treffen Maxima oder Minima aufeinander, so wird die Amplitude verstärkt (konstruktive Interferenz); trifft Maximum auf Minium so löschen sich die Wellen gegenseitig aus (destruktive Interferenz). 
@@ -200,13 +209,14 @@ Ist $\delta$ jedoch ein ungradzahliges Vielfaches der halben Wellenlänge, so tr
 Trifft eine Welle auf ein Hindernis, so verändert sie ihren geometrisch vorgeschriebenen Weg, dh. sie wird gestreut. %Der Begriff Streuung ist ein Sammelbegriff für viele physikalische Phänomene wie Reflexion, Brechung, Beugung etc., bei denen die Welle außerdem ihre Phase und Wellenlänge $\lambda$ verändern kann. 
 Trifft ein Wellenzug senkrecht auf ein Gitter mit der Gitterkonstante $d$, so werden seine verschiedenen Wellen an benachbarten Gitterstäben unter dem Beugungswinkel $\beta_n$ gebeugt. Konstruktive Interferenz ergibt sich nur, wenn (3) zutrifft, dh. der Gangunterschied $\delta$ ein ganzzahliges Vielfaches von $\lambda$ beträgt.
 
-\begin{figure} [h]
+\begin{figure} 
 \begin{center}
 \includegraphics[scale=0.5]{Beugungsbild.png} \end{center}
-\caption{Auf den Schirm abgebildetes Beugungsbild \quad [Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 10]}
+\caption{Auf den Schirm abgebildetes Beugungsbild \protect\footnotemark}
 \end{figure}
+\footnotetext{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 10}
 
-Bei Abbildung des entstehenden Musters (Abbildung 3) auf einen Schirm wird ein Beugungsbild der Wellen mit konstruktiver Interferenz sichtbar. Die Beugungsordnung beschreibt, an welcher Gitterebene die Welle gebeugt wurde. 
+Bei Abbildung des entstehenden Musters (Abbildung 3) auf einen Schirm wird ein Beugungsbild der Wellen mit konstruktiver Interferenz sichtbar. Die Beugungsordnung beschreibt, an welcher Gitterebene die Welle gebeugt wurde.
 
 
 \clearpage
@@ -308,7 +318,7 @@ Somit ergeben sich für die Winkel folgende Werte:
 \end{tabular}
 \end{table}
 
-Wie auf Abbildung 2 ersichtlich, ergibt sich ein zweites Dreieck mit dem gleichen Winkel $\beta_n$, dessen Seitenlängen die (für das erste Gitter bekannte) Gitterkonstante\\ $d= 50,1 \upmu \mathrm{m} =50,1\cdot10^{-6} \mathrm{m}$, als auch den unbekannten Gangunterschied $\delta$ zeigen. Damit ist folgende Formel aufgestellt:
+Wie auf Abbildung 2 ersichtlich, ergibt sich ein zweites Dreieck mit dem gleichen Winkel$\beta_n$, dessen Seitenlängen die (für das erste Gitter bekannte)\\ Gitterkonstante $d= 50,1 \upmu \mathrm{m} =50,1\cdot10^{-6} \mathrm{m}$, als auch den unbekannten Gangunterschied $\delta$ zeigen. Damit ist folgende Formel aufgestellt:
 
 \begin{equation}
 \sin{\beta_n}=\frac{\delta}{d}\cdot n
@@ -467,7 +477,7 @@ Daraus errechnet sich der $\sin\beta_n$:
 
 Somit ergibt sich für $d$ aus der Auftragung:\\
 
-$ d= \frac{\Delta n \cdot \lambda}{\Delta \sin(\beta_n)} = 7,2\cdot 10^{-5} = 72\upmu $m
+$ d= \frac{\Delta n \cdot \lambda}{\Delta \sin(\beta_n)} = 7,2\cdot 10^{-5} = 72$ \si\micro m
 
 
 
@@ -494,7 +504,7 @@ Es ergeben sich die folgenden Werte: \\
 \centering
 \begin{tabular}{|p{2 cm}||p{3 cm}|p{3 cm}|p{3 cm}|}
 		\hline
-         n & $\sin\beta_n$  & $\sin\beta_{max} $ & $sin\beta_{min}$ \\
+         n & $\sin\beta_n$  & $\sin\beta_{max} $ & $\sin\beta_{min}$ \\
          \hline 
          $1 $& 0,013& 0,017 & 0,009 \\
          \hline
@@ -522,7 +532,7 @@ $ \lambda_{min} = 536 $ nm\\
 Daraus lässt sich nun der Absolute Fehler mithilfe folgender Formel berechnen:\\
 \vspace{0,5 cm}
 
-$ \Delta \lambda = \dfrac{ \lambda_{max}-\lambda_{min}}{2}= \pm 170 $ nm\\
+$ \Delta \lambda = \dfrac{ \lambda_{max}-\lambda_{min}}{2}= 170 $ nm\\
 \vspace{0,5 cm}
 Der Fehler von $ \Delta \lambda $ lässt sich nun in Form von Fehlerbalken in die zweite Auftragung zur Bestimmung von \emph{d} eintragen. Es ergeben sich folgende Werte für die Fehlerbalken:
 \vspace{1 cm}
@@ -533,7 +543,7 @@ Der Fehler von $ \Delta \lambda $ lässt sich nun in Form von Fehlerbalken in di
 		\hline
          Obere Grenze des Fehlerbalkens: & Untere Grenze des Fehlerbalkens: \\
          
-         $ {|n|} \cdot {\lambda_{max}} $ & $ {|n|} \cdot {\lambda_{min}} $ \\
+         $ {|n|} \cdot {\lambda_{max}} $ in [m] & $ {|n|} \cdot {\lambda_{min}} $ in [m] \\
          \hline
          ${0,88} \cdot {10^{-6}} $& ${0,54} \cdot {10^{-6}} $ \\
          \hline
@@ -543,12 +553,13 @@ Der Fehler von $ \Delta \lambda $ lässt sich nun in Form von Fehlerbalken in di
          \hline
 \end{tabular}
 \end{table}
+
  
-In diese Auftragung lässt sich wieder eine Ausgleichsgerade maximaler und minimaler Steigung zeichnen und so ein maximaler und minimaler Wert für \emph{d} ermitteln:
-$ d_{max} = 77  \quad \mathrm{\upmu m}$ \\
-$ d_{min} = 61 \quad \mathrm{\upmu m} $\\
+In diese Auftragung lässt sich wieder eine Ausgleichsgerade maximaler und minimaler Steigung zeichnen und so ein maximaler und minimaler Wert für \emph{d} ermitteln:\\
+$ d_{max} = 77$ \si\micro m \\
+$ d_{min} = 61 $ \si\micro m\\
 Der Absolute Fehler wird nun wie folgt berechnet:
-$ \Delta d = \dfrac{ d_{max}-d_{min}}{2}= \pm 8 \quad \mathrm{\upmu m} $\\
+$ \Delta d = \dfrac{ d_{max}-d_{min}}{2}= 8$ \si\micro m\\
 \end{flushleft}
 
 \subsection{Diskussion systematischer Fehler}
@@ -569,18 +580,18 @@ Die gemessene Wellenlänge liegt im Bereich der Herstellerangaben. Die Fehlergre
 
 Für die Gitterkonstante ergibt sich, ebenfalls aus der Auftragung, folgenden Wert:\\\\
 \centering
-$ d = (72 \pm 8) \quad \mathrm{\upmu m} $\\
+$ d = (72 \pm 8)$ \si\micro m\\
 
 \begin{flushleft}
-Für die Gitterkonstante liegen keine Herstellerangaben vor. Jedoch ist die Gitterkonstante des ersten Gitters mit $d = 50,1 \quad \mathrm{\upmu m} $ vom Hersteller gegeben. Bei dem Vergleich der Beugungsmuster ist aufällig, dass die Punkte bei dem zweiten Gitter enger aneinander liegen, was bedeutet, dass es sich um ein Gitter mit einer größeren Gitterkonstante handeln muss. Bei Vergleich des Wertes und den Fehlergrenzen mit dem Herstellerwert wird ersichtlich, dass der Wert mindestens in dieser Beziehung stimmt.
+Für die Gitterkonstante liegen keine Herstellerangaben vor. Jedoch ist die Gitterkonstante des ersten Gitters mit $d = 50,1$ \si\micro m vom Hersteller gegeben. Bei dem Vergleich der Beugungsmuster ist aufällig, dass die Punkte bei dem zweiten Gitter enger aneinander liegen, was bedeutet, dass es sich um ein Gitter mit einer größeren Gitterkonstante handeln muss. Bei Vergleich des Wertes und den Fehlergrenzen mit dem Herstellerwert wird ersichtlich, dass der Wert mindestens in dieser Beziehung stimmt.
 Durch Minimierung des Fehlers lassen sich noch genauere Ergebnisse erzielen, die mit den Herstellerangaben besser übereinstimmen. So könnte etwa anstelle des doch eher ungenauen Zollstocks und Geodreiecks etwa eine Schieblehre verwendet werden und mit einem Winkelmesser den Abstand zwischen Laser und Holzrahmen exakter bestimmt werden. Mit einem Laser, der nur Licht einer Wellenlänge aussendet, könnten die Punkte des Beugungsmusters genauer übertragen werden. Dies würde ebenfalls durch einen fest installierten Holzrahmen vereinfacht werden.
 \end{flushleft}
 
 \section{Literaturverzeichnis}
 \begin{flushleft}
-1 \quad Gerd Wedler: $Lehrbuch der physikalischen Chemie$, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
+1 \quad Gerd Wedler: \emph{Lehrbuch der physikalischen Chemie}, 5. Aufl., WILEY-VCH Verlag GmbH Co. KGaA, Weinheim, \textbf{2004}.\\
 \vspace{0,5 cm}
-2\quad Götz, Eckhold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+2\quad Götz, Eckold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \vspace{0,5 cm}
 3 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
 \end{flushleft}
